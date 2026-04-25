@@ -58,8 +58,8 @@ export default function HomeAlternative() {
                 <p
                   className={`font-light lg:leading-[1.8vw] md:leading-relaxed  sm:leading-normal transition-all lg:text-[1vw] md:text-sm text-xs xs:text-xs `}
                 >
-                  A designer, illustrator, and doodler with 5+ years experience living in the big apple. Currently
-                  working my magic @{' '}
+                  Brand and marketing designer making things feel clear, engaging, and a little more alive. I design,
+                  and occasionally sneak in a doodle. Currently working my magic @{' '}
                   <a href="#/" className="link link-default">
                     GREEN DOT
                   </a>
