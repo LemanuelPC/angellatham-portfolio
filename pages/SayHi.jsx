@@ -65,21 +65,24 @@ export default function SayHi() {
           </div>
 
           <p className="text-default-dark font-light sm:text-xs xxl:text-[1vw]  md:leading-8 sm:leading-normal lg:leading-[2.5vw] xl:leading-[1.8vw]">
-            My name is Angella — creative designer and illustrator living in the big apple. I bring brands to life and
-            create designs in a wide range of disciplines including visual communication, branding, marketing design, and
-            illustration. My artworks are always completed with a detailed focus and imaginative concepts to create
-            whimsical visual images.
+            I’m Angella, a brand and marketing designer working across campaigns, web, and motion. I care about making
+            things feel clear and engaging, with just enough personality to make people pause. Sometimes that shows up
+            through illustration, sometimes it is just in the way things are put together.
             <br />
             <br />
-            When the sun goes down, you will find me either doing passion projects late into the night, relaxing with a
-            cup of tea, munching on comfort foods, or sky gazing.
+            Most days, I’m working with marketing and product teams to turn ideas into something real. The kind of work
+            that has to make sense, look good, and actually hold up once it’s out in the world.
             <br />
             <br />
-            I'm always down for a creative adventure.
+            After hours, I’m usually still designing, or slowing things down with tea, comfort food, and a bit of sky
+            watching.
+            <br />
+            <br />
+            I’m always open to new ideas, collaborations, or just a good creative conversation.
             <br />
             <br />
             <span className="text-default-pink font-medium lg:text-xl md:text-xl sm:text-sm xxl:text-[1.4vw]">
-              want to create something fun? let's chat.
+              want to make something fun? let’s chat.
             </span>
             <br />
             <a
