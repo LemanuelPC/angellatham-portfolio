@@ -64,35 +64,31 @@ export default function SayHi() {
             <Icon name="wave" className="xl:w-[2.3vw] lg:w-[2.3vw] md:w-[4vw] sm:w-5 ml-2" />
           </div>
 
-          <p className="text-default-dark font-light sm:text-xs xxl:text-[1vw]  md:leading-8 sm:leading-normal lg:leading-[2.5vw] xl:leading-[1.8vw]">
-            I’m Angella, a brand and marketing designer working across campaigns, web, and motion. I care about making
-            things feel clear and engaging, with just enough personality to make people pause. Sometimes that shows up
-            through illustration, sometimes it is just in the way things are put together.
-            <br />
-            <br />
-            Most days, I’m working with marketing and product teams to turn ideas into something real. The kind of work
-            that has to make sense, look good, and actually hold up once it’s out in the world.
-            <br />
-            <br />
-            After hours, I’m usually still designing, or slowing things down with tea, comfort food, and a bit of sky
-            watching.
-            <br />
-            <br />
-            I’m always open to new ideas, collaborations, or just a good creative conversation.
-            <br />
-            <br />
-            <span className="text-default-pink font-medium lg:text-xl md:text-xl sm:text-sm xxl:text-[1.4vw]">
-              want to make something fun? let’s chat.
-            </span>
-            <br />
-            <a
-              href="mailto:thamangella@gmail.com"
-              // className="text-default-dark font-light sm:text-xs mt-2 inline-block underline decoration-transparent hover:decoration-default-dark  transition-all duration-300 "
-              className="link"
-            >
-              thamangella@gmail.com
-            </a>
-          </p>
+          <div className="text-default-dark font-light sm:text-xs xxl:text-[1vw]  md:leading-8 sm:leading-normal lg:leading-[2.5vw] xl:leading-[1.8vw] [&>p]:mb-3 lg:[&>p]:mb-[0.8vw]">
+            <p>
+              I’m Angella, a brand and marketing designer working across campaigns, web, and motion. I care about
+              making things feel clear and engaging, with just enough personality to make people pause. Sometimes that
+              shows up through illustration, sometimes it is just in the way things are put together.
+            </p>
+            <p>
+              Most days, I’m working with marketing and product teams to turn ideas into something real. The kind of
+              work that has to make sense, look good, and actually hold up once it’s out in the world.
+            </p>
+            <p>
+              After hours, I’m usually still designing, or slowing things down with tea, comfort food, and a bit of sky
+              watching.
+            </p>
+            <p>I’m always open to new ideas, collaborations, or just a good creative conversation.</p>
+            <p>
+              <span className="text-default-pink font-medium lg:text-xl md:text-xl sm:text-sm xxl:text-[1.4vw]">
+                want to make something fun? let’s chat.
+              </span>
+              <br />
+              <a href="mailto:thamangella@gmail.com" className="link">
+                thamangella@gmail.com
+              </a>
+            </p>
+          </div>
 
           <div className="flex mt-2 gap-2 xxl:gap-[0.7vw] ">
             <a href="https://www.linkedin.com/in/angellatham/" target="_blank" rel="noreferrer">
