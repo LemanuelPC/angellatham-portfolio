@@ -1,0 +1,110 @@
+@reference './tailwind.css';
+
+.auth-container {
+  @apply xxl:w-2/5
+  xl:w-1/2
+  lg:w-1/2
+  md:w-[60vw]
+  lg:my-10
+  xl:my-[5vw]
+  my-10
+  w-full
+  border-default-dark
+  relative;
+}
+
+.paper-clip {
+  @apply absolute
+  -top-2.5
+  left-16
+  z-10
+  w-10
+  xxl:w-[2vw]
+  xxl:-top-[.5vw]
+  xxl:left-[4vw];
+}
+
+.owl-clip {
+  @apply absolute
+  md:block
+  hidden
+  w-32
+  left-auto
+  -right-[110px]
+  bottom-0
+  xxl:w-[8vw]
+  xxl:-right-[7vw];
+}
+
+.auth-box {
+  @apply relative
+  bg-default
+  border
+  rounded-[0.6vw]
+  border-default-dark
+  sm:py-12
+  xxl:p-[5vw]
+  xxl:px-[3vw]
+  xl:p-[5vw]
+  lg:p-[4vw]
+  md:p-[6vw]
+  p-[5vw]
+  sm:rounded-md;
+}
+
+.title {
+  @apply xxl:text-[2.5vw]
+  lg:text-[3vw]
+  md:text-[4vw]
+  xs:text-[5vw]
+  text-[6vw]
+  text-default-dark
+  font-[580]
+
+  flex
+  items-center
+  xxl:gap-[1vw]
+  gap-3
+  justify-center;
+}
+
+.title img {
+  @apply xxl:w-[1.8vw]
+  lg:w-6
+  md:w-6
+  sm:w-4;
+}
+
+.password-input {
+  @apply w-full
+  bg-white
+  xl:text-[1vw]
+  sm:text-xs
+  xxl:p-[1.5vw]
+  xxl:py-[1vw]
+  xl:p-[1vw]
+  lg:px-[1.5vw]
+  md:p-[1.5vw]
+  px-3
+  py-2
+  focus:outline-none
+  placeholder:text-default-dark/50;
+}
+
+.btn-unlock {
+  @apply xxl:text-[1.2vw]
+  xl:text-[1vw]
+  xs:text-xs
+  text-sm
+  flex
+  items-center
+  justify-center
+  xs:flex-shrink-0
+  w-1/2
+  md:w-[80%]
+  text-center
+  tracking-[-2%]
+  sm:flex-shrink-0
+  sm:w-auto
+  font-medium;
+}

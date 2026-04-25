@@ -1,0 +1,130 @@
+@reference './tailwind.css';
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../assets/fonts/orkney-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../assets/fonts/orkney-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../assets/fonts/orkney-regular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orkney';
+  src: url('../assets/fonts/orkney-light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: Orkney;
+  @apply text-default-dark;
+}
+
+.react-pdf__Page__canvas,
+.react-pdf__Page__svg,
+.react-pdf__Page__svg svg {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.link {
+  @apply relative cursor-pointer inline-block;
+}
+.link:hover {
+  @apply before:scale-x-100;
+}
+.link.link-default {
+  @apply before:bg-default-pink text-default-pink;
+}
+
+.link.flash:hover {
+  animation: flashAnimation 300ms;
+}
+.link.active {
+  @apply before:scale-x-100;
+}
+
+.link::before {
+  @apply content-[''] absolute block w-full h-[2px] lg:h-[.1vw] xl:h-[0.1vw]
+  bottom-0 left-0 bg-default-dark
+  scale-x-0 origin-top-left
+  transition ease-in-out duration-300 rounded-lg lg:rounded-[0.3vw] leading-normal;
+}
+
+.nav {
+  @apply border-b-[0.2vw] xxl:border-b-[0.2vw] border-b-default-pink/0 transition-all leading-[0.8] duration-300 xl:leading-[0.8vw] font-bold;
+}
+.nav:hover {
+  @apply border-b-default-pink;
+  animation: flashAnimation 300ms;
+}
+.nav.active {
+  @apply border-b-default-pink;
+}
+
+@keyframes flashAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  @apply p-3 cursor-pointer;
+}
+
+.btn-primary {
+  @apply bg-default-pink text-default transition-all;
+}
+.btn-primary:hover {
+  @apply bg-default-dark text-white;
+}
+
+.shake {
+  animation: shake 150ms 2 linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.layout {
+  @apply w-[70%] mx-auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

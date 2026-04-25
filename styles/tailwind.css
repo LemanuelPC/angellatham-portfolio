@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-default: #f3d7c3;
+  --color-default-dark: #4c3d36;
+  --color-default-pink: #d76a6a;
+
+  /*
+   * Tailwind 4 changed default text-{size}--line-height to a calc'd unitless
+   * multiplier. The original site was built on Tailwind 3 absolute values, so
+   * restore those — otherwise arbitrary `text-[Xvw]` classes at larger
+   * breakpoints scale the line-height with the font-size instead of holding
+   * the absolute pixel value the design assumed.
+   */
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl--line-height: 1;
+  --text-6xl--line-height: 1;
+  --text-7xl--line-height: 1;
+  --text-8xl--line-height: 1;
+  --text-9xl--line-height: 1;
+}
+
+/*
+ * Original Tailwind 3 config used non-standard breakpoint semantics —
+ * xs/sm/md are bounded ranges or max-width, lg/xl/xxl are min-width.
+ * Recreate exactly so existing `sm:*` classes target the right screens.
+ */
+@custom-variant xs (@media (min-width: 260px) and (max-width: 412px));
+@custom-variant sm (@media (max-width: 667px));
+@custom-variant md (@media (min-width: 668px));
+@custom-variant lg (@media (min-width: 1100px));
+@custom-variant xl (@media (min-width: 1400px));
+@custom-variant xxl (@media (min-width: 1650px));
